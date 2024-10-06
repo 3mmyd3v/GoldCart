@@ -1,0 +1,163 @@
+.container {
+    width: 400px;
+    height: 400px;
+    background: hsla(40, 100%, 98%, 1);
+    border-radius: 16px 0px 0px 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: .4s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-right: 30px;
+}
+
+p.p {
+    color: hsla(29, 15%, 49%, 1);
+    padding: 30px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.69px;
+    text-align: left;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end;
+    transition: .4s;
+}
+
+/* .container:hover .image {
+    transform: scale(1.2) skew(30deg) translate(-60px, 0);
+} */
+
+/* .container:hover {
+    background-image: radial-gradient(circle at top left, #333 25%, #1f1f1f 70%);
+    box-shadow: 0px -10px 60px 0px rgba(0, 0, 0, 0.3);
+} */
+
+.container:hover {
+    transform: scale(0.9);
+    overflow: hidden;
+    background: rgba(225, 225, 225, 0.6);
+}
+
+.hoverButton {
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    background: hsla(40, 100%, 98%, 1);
+    justify-content: center;
+    align-items: center;
+    width: 177px;
+    height: 50px;
+    border: 1px solid hsla(40, 61%, 52%, 0.2);
+    transition: .2s;
+    display: none;
+}
+
+.blackbgc {
+
+
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.blackbgc:hover {
+    opacity: 1;
+}
+
+.blackbgc>* {
+    transform: translate(25px);
+    transition: transform 0.6s;
+}
+
+.blackbgc:hover>* {
+    transform: translate(0px);
+}
+
+.hoverButton:hover {
+    background: rgba(207, 157, 58, 1);
+}
+
+.hoverButton:hover .link {
+    color: #fff;
+}
+
+
+.link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    letter-spacing: 0.0125em;
+    text-align: center;
+    color: hsla(40, 61%, 52%, 1);
+}
+
+.container:hover .hoverButton {
+    display: flex;
+    transition: .4s;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .container,
+    .blackbgc {
+        width: 370px;
+        height: 370px;
+    }
+
+    p.p {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .container,
+    .blackbgc {
+        width: 340px;
+        height: 340px;
+    }
+
+    p.p {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container,
+    .blackbgc {
+        width: 320px;
+        height: 320px;
+    }
+
+    p.p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container,
+    .blackbgc {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    p.p {
+        font-size: 21px;
+    }
+}

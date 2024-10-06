@@ -1,0 +1,58 @@
+.container {
+    height: auto;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+.body {
+    background-color: #eee;
+}
+
+.Card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+        white-space: nowrap; 
+        margin: 20px auto;
+}
+
+
+
+
+
+/* @media screen and (max-width: 1040px) {
+    .Card {
+        flex-direction: column;
+        gap: 2em;
+        width: 45vw;
+        justify-content: start;
+    }
+
+    .trending {
+        width: 55vw;
+        flex-wrap: wrap;
+    }
+
+
+    .cardtwo {
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: start;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+
+    p.p {
+        font-size: 20px;
+    }
+} */

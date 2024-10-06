@@ -1,0 +1,49 @@
+.container {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    background: #eee;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.cardtwo {
+display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px auto;
+}
+
+.trending {
+    margin-top: 50px;
+    width: 90vw;
+    height: auto;
+}
+h2.h2 {
+    font-family: Segoe UI;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 45.22px;
+    letter-spacing: 0.0025em;
+    text-align: left;
+    color: hsla(29, 19%, 24%, 1);
+    margin-bottom: 50px;
+}
+
+
+
+
+.totalCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}

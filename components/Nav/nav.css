@@ -1,0 +1,369 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding-right: 60px;
+    padding-left: 60px;
+    justify-content: space-between;
+
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    /* font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    text-align: left;
+    color: #BFB4A3;
+
+    margin-left: 10px; */
+
+    color: red;
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.048px;
+}
+
+.searchbutton {
+
+    width: 114px;
+    height: 49px;
+    left: 310px;
+    padding: 14px 32px 14px 32px;
+    border-radius: 8px;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.0125em;
+    text-align: center;
+
+}
+
+.searchbutton:hover {
+
+    background: hsla(45, 60%, 39%, 1);
+    transition: .2s;
+}
+
+.down {
+    display: flex;
+    height: 18px;
+}
+
+.nav_text {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #483C31;
+}
+
+.mediaNavText {
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #483C31;
+}
+
+.search {
+    width: 302px;
+    height: 47px;
+    border-radius: 7px;
+    border: 0.5px solid #917D6B;
+    margin-right: 10px;
+    background-color: white;
+    margin-left: 110px;
+}
+
+.span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+
+}
+
+.text_gradient,
+.text_gradient_auth {
+    background: linear-gradient(to left, #F77F00, #CF9D3A);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Inter, sans-serif;
+
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+h1 {}
+
+.absoluteMenu {
+    position: fixed;
+    width: 100px;
+    top: 60px;
+    height: 40px;
+    right: 50px;
+    background-color: hsl(0 0% 0% / 0.1);
+    backdrop-filter: blur(1.5rem);
+    border-radius: 10px;
+    padding: 12px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s;
+    animation: back-in 1.5s;
+    transform: scale(1.1);
+}
+
+.absoluteMenu:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    opacity: 0.5
+}
+
+.mediaMenu {
+    margin-left: 20px;
+    display: none;
+
+}
+
+.accountButtonSignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 49px;
+    background-color: #CF9D3A;
+
+    border-radius: 8px;
+    color: #fff;
+
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.0125em;
+
+}
+
+
+
+.accountButtonSignIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.0125em;
+    color: #CF9D3A;
+    border: 1px solid #CF9D3A33;
+    background: linear-gradient(0deg, rgba(207, 157, 58, 0.2), rgba(207, 157, 58, 0.2)),
+        linear-gradient(0deg, #FFFBF3, #FFFBF3);
+}
+
+
+.notLoggedIn {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+
+    flex-direction: column;
+}
+
+.absoluteText {
+    color: #483C31;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.0125em;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.lineSpan {
+    height: 1px;
+    background-color: hsl(0 0% 0% / 0.1);
+    backdrop-filter: blur(1.5rem);
+
+}
+
+.dropdown {
+    position: absolute;
+    animation: scale-up-center 1.5s;
+    top: 60px;
+    background: white;
+    height: 303px;
+    width: 286px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nav {
+
+        padding-right: 40px;
+        padding-left: 40px;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav {
+
+        padding-right: 30px;
+        padding-left: 30px;
+
+    }
+}
+
+/* @media screen and (max-width: 1125px) {
+    .mediaA {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 1186px) {
+
+    /* .mediaA {
+        display: none;
+    } */
+
+    .twonav {
+        display: none;
+    }
+
+    .mediaMenu {
+        display: flex;
+    }
+
+    .absoluteMenu {
+        display: flex;
+        animation: scale-up-center 1.5s;
+    }
+
+    .dropdown {
+        right: 50px
+    }
+
+}
+
+@media screen and (max-width:1125px) {
+    .mediaSearch {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:560px) {
+    .text_gradient {
+        display: none;
+    }
+}
+
+/* ANIMATION */
+@keyframes scale-up-center {
+
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+@-webkit-keyframes scale-up-center {
+
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+@keyframes back-in {
+
+    100% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+
+@-webkit-keyframes back-in {
+
+    100% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
